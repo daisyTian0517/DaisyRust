@@ -153,7 +153,7 @@ pub fn iters_egs() {
     }
 
     println!("\n-----inspect:在取出每个元素时执行一个闭包，但不改变元素。-------");
-    let mut counter2 = 0;
+    let counter3 = 0;
     (1..10)
         .into_iter()
         .inspect(|x| println!("Inspecting: {}", x))
