@@ -1,6 +1,6 @@
 use core::{option::Option::Some, result::Result::Err};
 /* 基础语法 */
-fn base_grammar() {
+pub fn base_grammar() {
     let mut b = 10; // 可变变量 mutable，未指定类型
 
     let a: u64 = 123; //如果没有声明类型，a 将自动被判断为有符号 32 位整型变量，这对于 a 的取值范围有很大的影响。
@@ -30,9 +30,9 @@ fn base_grammar() {
         println!("{}!", number);
     }
 
-    let squared_vec: Vec<i32> = vec.iter().map(|x| x * x).collect(); // vec.foreach(o=>o*o)
+    let squared_vec: Vec<i32> = (0..10).into_iter().map(|x| x * x).collect(); // vec.foreach(o=>o*o)
 
-    let filtered_vec: Vec<i32> = vec.into_iter().filter(|&x| x % 2 == 0).collect(); //vec.where(p=>p)
+    let filtered_vec: Vec<i32> = (0..10).into_iter().filter(|&x| x % 2 == 0).collect(); //vec.where(p=>p)
                                                                                     /*  */
     //所有权借用
     let s = String::from("hello");
