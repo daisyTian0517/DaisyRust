@@ -2,7 +2,7 @@ use core::{iter::IntoIterator,result::Result};
 use itertools::Itertools;
 
 
-pub fn iters_uses() {
+pub fn iters_egs() {
     println!("-----next:返回迭代器中的下一个元素-----");
     let mut iter_next = (1..10).into_iter();
     while let Some(val) = iter_next.next() {
