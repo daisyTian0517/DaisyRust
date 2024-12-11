@@ -6,7 +6,7 @@
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceRoot}/target/debug/DaisyRust.exe",
-            "args": [],
+            "args": ["first", "second"],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
             "environment": [],
@@ -17,7 +17,7 @@
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceRoot}/target/debug/DaisyRust",
-            "args": [],
+            "args":  [],
             "cwd": "${workspaceRoot}",
         }
     ]
